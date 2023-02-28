@@ -22,4 +22,3 @@ NAME OF ALL DEPENDENCIES :-
 
 I also added "Type": "module" in the package.json file so that i can write in a import format instead of required
 "IMPORT" is an ES6 feature ex:- IMPORT EXPRESS FROM "EXPRESS";
-I also 
