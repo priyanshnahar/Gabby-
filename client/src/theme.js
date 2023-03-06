@@ -28,6 +28,58 @@ export const colorTokens = {
       900: "#001519",
     },
   };
+
+//   primary: {
+//     50: "#FFFBE6",
+//     100: "#FFF7CC",
+//     200: "#FFEE99",
+//     300: "#FFE666",
+//     400: "#FFDD33",
+//     500: "#FFD500",
+//     600: "#BCA000",
+//     700: "#7D6B00",
+//     800: "#3F3500",
+//     900: "#191500",
+//     }
+
+// primary: {
+//     50: "#FFF6E6",
+//     100: "#FFECCC",
+//     200: "#FFD999",
+//     300: "#FFC266",
+//     400: "#FF9933",
+//     500: "#FF8000",
+//     600: "#BC5E00",
+//     700: "#7D3D00",
+//     800: "#3F1F00",
+//     900: "#191000",
+//     }
+// primary: {
+//     50: "#F7E9FF",
+//     100: "#E0CFFF",
+//     200: "#C9B4FF",
+//     300: "#B29AFF",
+//     400: "#9B7FFF",
+//     500: "#8465FF",
+//     600: "#553DCC",
+//     700: "#32287D",
+//     800: "#1A143F",
+//     900: "#0A0819",
+//     }
+
+// primary: {
+//     50: "#FFF0F0",
+//     100: "#FFD1D1",
+//     200: "#FFA3A3",
+//     300: "#FF7575",
+//     400: "#FF4747",
+//     500: "#FF1919",
+//     600: "#BC1313",
+//     700: "#7D0C0C",
+//     800: "#3F0606",
+//     900: "#190101",
+//     }
+
   
   // mui theme settings
   export const themeSettings = (mode) => {
@@ -73,7 +125,7 @@ export const colorTokens = {
                 alt: colorTokens.grey[0],
               },
             }),
-      },
+      },    
       typography: {
         fontFamily: ["Rubik", "sans-serif"].join(","),
         fontSize: 12,
@@ -102,5 +154,4 @@ export const colorTokens = {
           fontSize: 14,
         },
       },
-    };
-  };
+    };  
