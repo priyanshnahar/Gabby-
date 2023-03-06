@@ -1,9 +1,3 @@
 export const ProfilePage = () => {
-
-    return (
-        <div>
-                LoginPage
-        </div>
-    )
-  
-}
+  return <div>LoginPage</div>;
+};

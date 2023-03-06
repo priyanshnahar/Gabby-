@@ -7,7 +7,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import {
   persistStore,
-  persisReducer,
+  persistReducer,
   FLUSH,
   REHYDRATE,
   PAUSE,
@@ -19,22 +19,13 @@ import storage from "redux-persist/lib/storage";
 import { PersistGate } from "redux-persist/integration/react";
 
 const persistConfig = { key: "root", storage, version: 1 };
-const persistReducer = persistReducer(persistConfig, authReducer);
+const persistedReducer = persistReducer(persistConfig, authReducer);
 const store = configureStore({
-  reducer: persistReducer,
-  middleware: (getDefaultMidleware) =>
-    getDefaultMidleware({
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
       serializableCheck: {
-        ignoredActions: [
-          persistStore,
-          persisReducer,
-          FLUSH,
-          REHYDRATE,
-          PAUSE,
-          PERSIST,
-          PURGE,
-          REGISTER,
-        ],
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
     }),
 });
