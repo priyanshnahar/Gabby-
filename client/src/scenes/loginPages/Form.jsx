@@ -72,7 +72,7 @@ const Form = () => {
     );
     const savedUser = await savedUserResponse.json();
     onSubmitProps.resetForm();
-
+  
     if (savedUser) {
       setPageType("login");
     }
@@ -159,7 +159,7 @@ const Form = () => {
                   name="location"
                   error={Boolean(touched.location) && Boolean(errors.location)}
                   helperText={touched.location && errors.location}
-                  sx={{ gridColumn: "span 4" }}
+                  sx={{ gridColumn: "span 4" }}  
                 />
                 <TextField
                   label="Occupation"
@@ -180,7 +180,7 @@ const Form = () => {
                   p="1rem"
                 >
                   <Dropzone
-                    acceptedFiles=".jpg,.jpeg,.png"
+                    acceptedFiles=".jpg,.jpeg,.png,.pdf"
                     multiple={false}
                     onDrop={(acceptedFiles) =>
                       setFieldValue("picture", acceptedFiles[0])
